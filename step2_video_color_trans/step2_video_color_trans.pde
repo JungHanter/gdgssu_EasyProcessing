@@ -31,17 +31,17 @@ void draw() {
     
     int currAvg = (currR + currG + currB)/3;
     if(currAvg < 64) {
-      pixels[i] = color(0,0,255);
-      //pixels[i] = color(64, 64, 64);
+      //pixels[i] = color(0,0,255);
+      pixels[i] = color(64, 64, 64);
     } else if(currAvg < 128) {
-      pixels[i] = color(255,255,0);
-      //pixels[i] = color(128, 128, 128);
+      //pixels[i] = color(255,255,0);
+      pixels[i] = color(128, 128, 128);
     } else if(currAvg < 192) {
-      pixels[i] = color(0,255,255);
-      //pixels[i] = color(192, 192, 192);
+      //pixels[i] = color(0,255,255);
+      pixels[i] = color(192, 192, 192);
     } else {
-      pixels[i] = color(255,0,255);
-      //pixels[i] = color(255, 255, 255);
+      //pixels[i] = color(255,0,255);
+      pixels[i] = color(255, 255, 255);
     }
   }
   
